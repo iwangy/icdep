@@ -1,0 +1,4 @@
+# Administration
+### How can we send commands ("SLEEP", "RESTART", "ARE-YOU-THERE", etc) to individual nodes in the network, rather than treat them as pass-through intermediaries?
+
+**Proposed Solution:** As aforementioned in 'extension.md' we can add a command field in the header of the index card. With the different commands such as ("SLEEP", "RESTART', or "ARE-YOU-THERE") there can be a pre-defined dictionary of codes that all nodes agrees on for commands. Such as "SLEEP" can be code 001, "RESTART" 002, so on and so forth. Along with the command, there can be a address or identification code to ensure the command reaches the appropriate node. Once the command is receieved, the node should send a response on whether the command was sucessfully executed, and the response similarly can be from a pre-defined dictionary of codes.

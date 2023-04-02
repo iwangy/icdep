@@ -1,0 +1,4 @@
+# Anti-Duplication
+### How can we ensure that each card is received once and only once?
+
+**Proposed solution:** My answer is based on the assumption that a card is sent more than once only if the card does not sucessfully reach its final destination. To ensure that each packet is received once and only once in the ICDEP protocol, we can assign each index card a unique sequence number from the sender. If the message spans 7 cards, we would assign 1/7, 2/7, 3/7, and so on and so forth to each card (Like we did in class) along with a unique hash of numbers or header information that is specific to the transmission. On the receiving end the sequence numbers/header information is monitored. If a card with a duplicate sequence number is receieved it is discarded to ensure that the card is recieved once and only once.
